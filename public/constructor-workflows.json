@@ -1,0 +1,1 @@
+{"version":1,"workflows":[{"id":"consultar_gastos","name":"Consultar gastos","description":"Consulta los gastos de la sesión actual","endpoint":"/api/gastos","method":"GET","input":{}}]}

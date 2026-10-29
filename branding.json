@@ -1,0 +1,917 @@
+{
+  "tone": "trustworthy",
+  "fontBody": "IBM Plex Sans",
+  "logoText": "Bolsillo Gastos",
+  "brandbook": {
+    "motif": "El bolsillo plegado sugiere contener y ordenar gastos. Se utiliza discretamente en la esquina del resumen, separado de cifras y mensajes. Los bordes laterales de selección vinculan el registro con el editor sin añadir tarjetas.",
+    "pages": [
+      {
+        "id": "brand-page-1",
+        "title": "Brand guidelines",
+        "layout": "cover",
+        "summary": "Herramienta personal de una pantalla para registrar y consultar gastos en COP con rapidez, persistencia real y estados de guardado comprensibles.",
+        "examples": [
+          {
+            "text": "Gastos en COP, en una sola pantalla.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Align the symbol, name and subtitle to one left edge. Leave generous space around the compact identity.",
+            "title": "Cover composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-2",
+        "title": "The Brand",
+        "layout": "divider",
+        "summary": "Use Steady Green chapter dividers with short white headings. Express a compact working tool, not a promotional destination; avoid slogans about financial outcomes.",
+        "examples": [
+          {
+            "text": "Registra, consulta y edita sin salir de la pantalla.",
+            "title": "Un lugar para tus gastos"
+          },
+          {
+            "text": "Use one heading and one supporting line. Do not add metric cards, photography or decorative charts.",
+            "title": "Divider rhythm"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-3",
+        "title": "Welcome",
+        "layout": "content",
+        "summary": "This guide presents an original identity proposed for this project, with examples of its visual and editorial use.",
+        "examples": [
+          {
+            "text": "The folded pocket, palette, typography and Spanish interface copy form one proposed visual system.",
+            "title": "Identity scope"
+          },
+          {
+            "text": "Keep visual rules in English for the design team and user-facing specimens in Spanish for the app.",
+            "title": "Use this guide"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-4",
+        "title": "Index",
+        "layout": "content",
+        "summary": "Keep the guide in sequence: purpose, identity, typography, color, imagery and applications. Use page ranges rather than a dense list of 49 entries.",
+        "examples": [
+          {
+            "text": "Introduction, voice, pocket symbol and logo handling.",
+            "title": "01–15 · Identity"
+          },
+          {
+            "text": "Typography, layout, palette, graphic elements and image direction.",
+            "title": "16–29 · Visual system"
+          },
+          {
+            "text": "Design studies for the screen, small-format identity, printed references and support.",
+            "title": "30–49 · Applications"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-5",
+        "title": "Defining",
+        "layout": "content",
+        "summary": "Define the identity through a clear working sequence: name, filtered total, category filter, records and editor. The pocket suggests containment without turning the interface into an illustration.",
+        "examples": [
+          {
+            "text": "Registro personal de gastos en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Show Total filtrado above the shared table/editor region. Keep confirmation beside the save action.",
+            "title": "Working sequence"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-6",
+        "title": "Vision & Mission",
+        "layout": "content",
+        "summary": "Use the supplied product purpose rather than inventing a corporate mission. Describe the intended task and scope; do not promise savings, financial advice or permanent access.",
+        "examples": [
+          {
+            "text": "Una pantalla para registrar y consultar gastos en COP.",
+            "title": "Purpose statement"
+          },
+          {
+            "text": "Agrega, edita, elimina con confirmación y filtra por categoría. No necesitas una cuenta.",
+            "title": "Scope statement"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-7",
+        "title": "Brand Values",
+        "layout": "content",
+        "summary": "Treat clarity, continuity and restraint as design principles for this project, not asserted company values. Make every principle visible in a specific interface decision.",
+        "examples": [
+          {
+            "text": "Name the action Guardar cambios and show COP beside amounts; avoid vague labels such as Listo.",
+            "title": "Clarity"
+          },
+          {
+            "text": "Keep the selected record and editor linked during validation, saving, conflict and recovery.",
+            "title": "Continuity"
+          },
+          {
+            "text": "Use one total band, not a dashboard of competing metric cards.",
+            "title": "Restraint"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-8",
+        "title": "Tone of Voice",
+        "layout": "content",
+        "summary": "Write brief, concrete Spanish. Name the action and distinguish draft, pending, uncertain and saved states. Use calm explanations instead of technical jargon or celebratory claims.",
+        "examples": [
+          {
+            "text": "Gasto guardado. Puedes agregar otro gasto.",
+            "title": "Confirmed"
+          },
+          {
+            "text": "No pudimos confirmar el resultado. Recupera el envío original antes de continuar.",
+            "title": "Uncertain"
+          },
+          {
+            "text": "Escribe un importe mayor que cero.",
+            "title": "Invalid"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-9",
+        "title": "Logo",
+        "layout": "divider",
+        "summary": "Introduce the logo chapter on Steady Green. Show the complete symbol on Quiet Paper and the name in white outside that support surface.",
+        "examples": [
+          {
+            "text": "Un bolsillo abierto y un pliegue diagonal identifican la herramienta.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Keep the pocket and business name visually paired, with no extra badge, slogan or container around the name.",
+            "title": "Chapter composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-10",
+        "title": "Logo overview",
+        "layout": "logo",
+        "summary": "The identity has two elements: a geometric folded pocket and the separately typeset name. Preserve the master silhouette and its open upper edge.",
+        "examples": [
+          {
+            "text": "Use the green pocket beside Bolsillo Gastos in IBM Plex Sans 600.",
+            "title": "Full signature"
+          },
+          {
+            "text": "Use the pocket alone for the app icon; retain Bolsillo Gastos as its accessible name.",
+            "title": "Compact signature"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-11",
+        "title": "Primary logo",
+        "layout": "logo",
+        "summary": "Place the pocket to the left of Bolsillo Gastos. Use natural letter spacing, mixed case and a 12 px gap in the app header. Keep both elements vertically centered.",
+        "examples": [
+          {
+            "text": "Pair a 32 px symbol with the 28 px name on desktop. Keep the lockup on one line wherever it fits.",
+            "title": "Header lockup"
+          },
+          {
+            "text": "At 390 px, use a 28 px symbol and a 24 px name if needed. Preserve the full business name.",
+            "title": "Compact header"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-12",
+        "title": "Logo Safezone",
+        "layout": "logo",
+        "summary": "Keep clear space equal to one quarter of the symbol width around the complete lockup. Measure from visible artwork and type, not the SVG canvas.",
+        "examples": [
+          {
+            "text": "Reserve at least 8 px around the lockup; use the larger 16 px page margin at mobile edges.",
+            "title": "32 px symbol"
+          },
+          {
+            "text": "Keep the decorative pocket at least 12 px from the total and counter. Never position it behind numbers.",
+            "title": "Summary corner"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-13",
+        "title": "Color combinations",
+        "layout": "colors",
+        "summary": "Use the green symbol and Deep Ink name on Quiet Paper or white. On green or ink backgrounds, preserve the symbol on a Quiet Paper support surface and set the name in white.",
+        "examples": [
+          {
+            "text": "Pocket #246348; name #202A25; background #F7F8F2.",
+            "title": "Light header"
+          },
+          {
+            "text": "Keep the green pocket on #F7F8F2 and the white name beside it. Do not recolor the master symbol.",
+            "title": "Dark cover"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-14",
+        "title": "Brandmark",
+        "layout": "logo",
+        "summary": "The pocket combines an open container with a detached triangular fold. Reuse the exact master geometry in the header, summary corner, favicon and raster app icon.",
+        "examples": [
+          {
+            "text": "Keep the upper-right triangle separate from the pocket outline. Its diagonal is the distinctive detail.",
+            "title": "Recognizable fold"
+          },
+          {
+            "text": "Use the symbol without lettering at icon sizes. Do not add coins, currency signs or initials.",
+            "title": "Small-scale use"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-15",
+        "title": "Logo misuse",
+        "layout": "logo",
+        "summary": "Do not stretch, rotate, outline again or crop the pocket. Never turn it into a currency badge or replace the business name with an abbreviation.",
+        "examples": [
+          {
+            "text": "Use Bolsillo Gastos, not BG, BolsilloGastos or BOLSILLO GASTOS in the primary lockup.",
+            "title": "Preserve the name"
+          },
+          {
+            "text": "Do not place the green symbol directly on Deep Ink or across the COP total.",
+            "title": "Preserve legibility"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-16",
+        "title": "Typography",
+        "layout": "divider",
+        "summary": "Use typography as the main organizing device. Introduce the chapter with a short heading and a Spanish specimen; avoid ornamental lettering and oversized marketing statements.",
+        "examples": [
+          {
+            "text": "Consulta el total filtrado y registra un gasto.",
+            "title": "Tus gastos, a la vista"
+          },
+          {
+            "text": "Use IBM Plex Sans throughout; let size, weight and spacing separate tasks rather than adding display faces.",
+            "title": "Type direction"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-17",
+        "title": "Typography overview",
+        "layout": "type",
+        "summary": "Use IBM Plex Sans for headings, body copy and controls. Keep sentence case, clear accents and tabular figures. Align monetary values to the right.",
+        "examples": [
+          {
+            "text": "COP 63.700 · 3 gastos",
+            "title": "Total filtrado"
+          },
+          {
+            "text": "Set body text and inputs at 16 px. Use 12–14 px for secondary notes, never for essential field values.",
+            "title": "Interface texture"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-18",
+        "title": "Primary typeface",
+        "layout": "type",
+        "summary": "IBM Plex Sans is the selected family; distributable files are supplied for weights 400, 500, 600 and 700. Use local font assets for the intended app presentation.",
+        "examples": [
+          {
+            "text": "Completa el concepto, la categoría, la fecha y el importe.",
+            "title": "Agregar gasto"
+          },
+          {
+            "text": "Keep the name, table, editor and messages in IBM Plex Sans. A system sans-serif may serve only as a loading fallback.",
+            "title": "Family consistency"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-19",
+        "title": "Typography",
+        "layout": "type",
+        "summary": "Use 400 for reading, 500 for labels and controls, and 600 for the name, headings and total. Reserve supplied weight 700 for manual headings, not routine app emphasis.",
+        "examples": [
+          {
+            "text": "Revisa los datos antes de guardar.",
+            "title": "Guardar cambios"
+          },
+          {
+            "text": "Set Editar gasto at 600, Concepto at 500 and the entered concept at 400. Avoid bolding every label.",
+            "title": "Weight pairing"
+          },
+          {
+            "text": "Use upright text for amounts and status messages. Do not use italics or all caps to signal errors.",
+            "title": "Style discipline"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-20",
+        "title": "Supporting type",
+        "layout": "type",
+        "summary": "Support the primary hierarchy with the same family, not a second typeface. Keep help text readable, close to its field and free to wrap onto multiple lines.",
+        "examples": [
+          {
+            "text": "Escribe 18500,50 o 18500.50, sin separadores de miles.",
+            "title": "Importe en COP"
+          },
+          {
+            "text": "Use Soft Sage #536058 for help text and dates. Use semantic red or amber when the message indicates a problem.",
+            "title": "Secondary information"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-21",
+        "title": "Hierarchy",
+        "layout": "type",
+        "summary": "Use a 28 px screen title, 36 px total, 16 px body and inputs, and 14–16 px buttons. Keep long editing titles multiline rather than shrinking or truncating them.",
+        "examples": [
+          {
+            "text": "Actualiza los campos y selecciona Guardar cambios.",
+            "title": "Editar gasto: Almuerzo de ejemplo"
+          },
+          {
+            "text": "Make COP 63.700 the strongest item in the summary band; keep Total filtrado and 3 gastos visibly subordinate.",
+            "title": "Numerical emphasis"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-22",
+        "title": "Layouts",
+        "layout": "applications",
+        "summary": "Use a 1180 px desktop canvas with table left and a roughly 360 px editor right. At 768 px and below, place filter and editor before the list; use 16 px mobile margins.",
+        "examples": [
+          {
+            "text": "Concepto · Categoría · Fecha · Importe en COP",
+            "title": "Nuevo gasto"
+          },
+          {
+            "text": "Keep the editor heading, Guardar gasto and Concepto/Categoría visible on ordinary arrival. Let later fields flow below.",
+            "title": "390 × 640 arrival"
+          },
+          {
+            "text": "Use 4, 8, 12, 16, 24 and 32 px spacing. Join table and editor with a common top border, not separate floating cards.",
+            "title": "Spacing rhythm"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-23",
+        "title": "Colors",
+        "layout": "divider",
+        "summary": "Introduce color with a Steady Green divider. Use the palette to create quiet contrast and clear actions, not alternating decorative panels.",
+        "examples": [
+          {
+            "text": "Quiet Paper surrounds white working surfaces; Deep Ink carries content and Steady Green identifies the primary action.",
+            "title": "Calm workspace"
+          },
+          {
+            "text": "Use green for Guardar gasto and selection marks. Do not give each category its own decorative color.",
+            "title": "One accent"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-24",
+        "title": "Colors overview",
+        "layout": "colors",
+        "summary": "Preserve all supplied hex values. Require at least 4.5:1 text contrast and 3:1 for control boundaries and focus indicators. Keep warning and destructive colors distinct from the neutral palette.",
+        "examples": [
+          {
+            "text": "Quiet Paper #F7F8F2 · Clear Canvas #FFFFFF · Steady Green #246348.",
+            "title": "Core palette"
+          },
+          {
+            "text": "Deep Ink #202A25 for primary text; Soft Sage #536058 for secondary text.",
+            "title": "Reading palette"
+          },
+          {
+            "text": "Use #875900 for warnings and #B42332 for errors and deletion. Neither is replaced by Soft Sage.",
+            "title": "Semantic colors"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-25",
+        "title": "Using Tints",
+        "layout": "colors",
+        "summary": "Keep text, focus rings and the master mark at full color. Optional pale accent washes may support selection, but never replace the solid green selection edge.",
+        "examples": [
+          {
+            "text": "Use an 8% green wash over white behind Almuerzo de ejemplo, plus a solid #246348 edge and a textual editing title.",
+            "title": "Selected record"
+          },
+          {
+            "text": "Keep No pudimos confirmar el resultado in full-strength warning color; do not lower text opacity.",
+            "title": "No faded messages"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-26",
+        "title": "Graphic Elements",
+        "layout": "divider",
+        "summary": "Build expression from the folded pocket, shared borders and paired selection edges. Avoid textures, currency patterns, chart decorations or extra cards.",
+        "examples": [
+          {
+            "text": "Reveal green marks beside the selected row and editor together over 160 ms using opacity or transform without shifting content.",
+            "title": "Paired selection"
+          },
+          {
+            "text": "Show both marks immediately and move to the editor without animated scrolling. Preserve the same focus and selected state.",
+            "title": "Reduced motion"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-27",
+        "title": "Icons",
+        "layout": "content",
+        "summary": "Use simple interface icons only where they help recognition. Pair record actions with visible Spanish labels, and keep icon buttons within at least 44 px touch targets.",
+        "examples": [
+          {
+            "text": "Show Editar and Eliminar as text, even when accompanied by a pencil or bin icon.",
+            "title": "Explicit actions"
+          },
+          {
+            "text": "Pair a warning icon with No pudimos confirmar el resultado. An icon or color alone must not carry the message.",
+            "title": "Status language"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-28",
+        "title": "Photography",
+        "layout": "applications",
+        "summary": "Do not use photography in the app. Replace lifestyle images, banknotes and stock-finance scenes with clear interface content and generous blank space.",
+        "examples": [
+          {
+            "text": "Aún no hay gastos. Agrega el primero con el formulario.",
+            "title": "Empty workspace"
+          },
+          {
+            "text": "For a presentation, show a clean crop of the table and editor instead of a person holding a wallet.",
+            "title": "Editorial alternative"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-29",
+        "title": "Moodboard",
+        "layout": "applications",
+        "summary": "Use a material-free moodboard: paper-colored canvas, precise rows, tabular numbers and a folded geometric pocket. Keep references functional rather than nostalgic or financial-luxury themed.",
+        "examples": [
+          {
+            "text": "A white editor, dark text, a green edge and COP 63.700 communicate the intended compact working atmosphere.",
+            "title": "Visual anchors"
+          },
+          {
+            "text": "Avoid leather textures, gold accents, handwritten ledgers, glass effects and dashboard-style metric tiles.",
+            "title": "Exclude"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-30",
+        "title": "Applications",
+        "layout": "divider",
+        "summary": "Label application layouts as design studies. Carry the same pocket, type hierarchy and restrained palette into every format without implying extra product features or commercial services.",
+        "examples": [
+          {
+            "text": "Registra gastos en COP y consulta el total por categoría.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Use Design study outside the artwork. Keep specimen copy inside the artwork natural and user-facing.",
+            "title": "Study caption"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-31",
+        "title": "Social media icons",
+        "layout": "logo",
+        "summary": "Design study: center the master pocket on Quiet Paper for a profile icon. Allow circular cropping without clipping the fold; do not squeeze the business name into the icon.",
+        "examples": [
+          {
+            "text": "Gastos personales en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Keep the complete 160-unit master canvas inside the central 80% of the profile image.",
+            "title": "Crop rule"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-32",
+        "title": "Social media profiles",
+        "layout": "applications",
+        "summary": "Design study: pair the pocket avatar with the exact business name and a factual, brief description. Do not invent an account handle, audience size or official social presence.",
+        "examples": [
+          {
+            "text": "Una pantalla para registrar, editar y consultar gastos en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Use a Quiet Paper banner with one restrained interface crop. Keep private records and session details out of imagery.",
+            "title": "Profile composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-33",
+        "title": "Instagram posts",
+        "layout": "applications",
+        "summary": "Design study: use one task per post, a short headline and a fictional interface crop. Preserve readable text sizes and identify the sample records as examples.",
+        "examples": [
+          {
+            "text": "Selecciona Alimentación para ver sus gastos y el total filtrado.",
+            "title": "Consulta por categoría"
+          },
+          {
+            "text": "Place the heading above a crop showing Alimentación, Almuerzo de ejemplo and COP 18.500. Retain the Ejemplo label.",
+            "title": "Post layout"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-34",
+        "title": "Posters",
+        "layout": "applications",
+        "summary": "Design study: use a large task-led headline, the pocket lockup and a simplified screen composition. Do not add invented URLs, download badges or promotional claims.",
+        "examples": [
+          {
+            "text": "Concepto, categoría, fecha e importe en COP.",
+            "title": "Tus gastos, en una pantalla"
+          },
+          {
+            "text": "Give the headline most of the upper third. Place one table/editor composition below, with no photography or metric cards.",
+            "title": "Poster hierarchy"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-35",
+        "title": "T shirts and totes",
+        "layout": "applications",
+        "summary": "Design study: use the pocket and name as a restrained identity application, not merchandise advertising. Keep the mark green on a light support and avoid repeating it as a pattern.",
+        "examples": [
+          {
+            "text": "Gastos en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Use one small chest lockup or a centered tote lockup. Preserve clear space equal to one quarter of the symbol width.",
+            "title": "Print placement"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-36",
+        "title": "Document sleeve",
+        "layout": "applications",
+        "summary": "Design study: adapt packaging to a printed reference sleeve, not a product shipment. Use Quiet Paper, a small green pocket and a single descriptive label; imply no export or delivery feature.",
+        "examples": [
+          {
+            "text": "Referencia de campos y categorías de Bolsillo Gastos.",
+            "title": "Guía de gastos"
+          },
+          {
+            "text": "Place the lockup at the upper left and the document title below. Leave the remaining face unpatterned.",
+            "title": "Sleeve composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-37",
+        "title": "Workspace entry",
+        "layout": "applications",
+        "summary": "Design study: the destination is the working screen at /, not a landing page or physical pickup point. Show the name, total band and editor immediately; do not introduce an onboarding gate.",
+        "examples": [
+          {
+            "text": "Completa los campos para registrar un gasto.",
+            "title": "Nuevo gasto"
+          },
+          {
+            "text": "No necesitas una cuenta. Borrar las cookies puede impedir que recuperes el acceso a tus gastos.",
+            "title": "Session note"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-38",
+        "title": "Expense controls",
+        "layout": "applications",
+        "summary": "Design study: place the primary save action in the editor heading and Cancelar nearby. Keep save available for validation; disable only during incompatible operations. Use 4 px corner radii.",
+        "examples": [
+          {
+            "text": "Concepto, categoría, fecha e importe son obligatorios.",
+            "title": "Guardar gasto"
+          },
+          {
+            "text": "¿Eliminar Almuerzo de ejemplo por COP 18.500? Usa Cancelar con foco inicial y Eliminar gasto en #B42332.",
+            "title": "Delete confirmation"
+          },
+          {
+            "text": "Use white text on green for saving, visible focus and 44 px targets. Keep Editar and Eliminar explicit in each record.",
+            "title": "Control layout"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-39",
+        "title": "Save confirmation",
+        "layout": "applications",
+        "summary": "Design study: show confirmation beside the save action, never on a receipt page. Update totals only from confirmed server data and preserve the identity of the saved record.",
+        "examples": [
+          {
+            "text": "Almuerzo de ejemplo · Alimentación · COP 18.500. Agregar otro gasto.",
+            "title": "Gasto guardado"
+          },
+          {
+            "text": "El gasto se guardó, pero no aparece en la categoría seleccionada.",
+            "title": "Outside the filter"
+          },
+          {
+            "text": "Keep feedback in the editor with flexible height. Do not insert a false row when the saved expense falls outside the active filter.",
+            "title": "Confirmation placement"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-40",
+        "title": "Category reference card",
+        "layout": "applications",
+        "summary": "Design study: replace a rewards card with a practical category reference. Show the six fixed labels without points, membership tiers, benefits or a scannable account identifier.",
+        "examples": [
+          {
+            "text": "Alimentación · Transporte · Hogar · Salud · Ocio · Otros",
+            "title": "Elige una categoría"
+          },
+          {
+            "text": "Use two columns of three labels beneath the pocket lockup. Keep all labels in Deep Ink rather than category colors.",
+            "title": "Card structure"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-41",
+        "title": "Workspace sign",
+        "layout": "applications",
+        "summary": "Design study: use a presentation placard rather than implying a store or office location. Keep the pocket, name and one descriptive line readable from a distance.",
+        "examples": [
+          {
+            "text": "Registro personal de gastos en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "On a Deep Ink panel, use a white name and the green pocket on Quiet Paper. Add no address, opening hours or service claims.",
+            "title": "Sign pairing"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-42",
+        "title": "Expense app",
+        "layout": "applications",
+        "summary": "Design study: / is the only screen. Arrange one filtered total band above the table/editor workspace. Saved records are intended to persist in Turso through server-side API routes, not local mock data.",
+        "examples": [
+          {
+            "text": "COP 63.700 · 3 gastos · Todas las categorías",
+            "title": "Total filtrado"
+          },
+          {
+            "text": "Show Ejemplo on Almuerzo de ejemplo, Bus de ejemplo and Compra de ejemplo. Do not restore deleted examples or present them as personal entries.",
+            "title": "Seed presentation"
+          },
+          {
+            "text": "Use two lines for record data and a third for Editar and Eliminar. Wrap long concepts without horizontal scrolling or truncation.",
+            "title": "Mobile records"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-43",
+        "title": "Favicon",
+        "layout": "logo",
+        "summary": "Design study: reuse the master pocket geometry for app/icon.svg and raster app icons. Use a Quiet Paper support surface; omit lettering, extra outlines and starter artwork.",
+        "examples": [
+          {
+            "text": "Registra y consulta gastos en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Keep the entire pocket and detached fold visible. Scale the master uniformly rather than redrawing it for a different size.",
+            "title": "Small icon composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-44",
+        "title": "Stationery",
+        "layout": "applications",
+        "summary": "Design study: build reference documents on white or Quiet Paper with a small top-left lockup. Use a consistent left edge, restrained footer and no invented legal or contact details.",
+        "examples": [
+          {
+            "text": "Concepto · Categoría · Fecha · Importe en COP",
+            "title": "Notas de gastos"
+          },
+          {
+            "text": "Use a single green rule below the heading. Align numerical columns right and keep descriptive text left aligned.",
+            "title": "Page structure"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-45",
+        "title": "Business cards",
+        "layout": "applications",
+        "summary": "Design study: use a project introduction card without invented people, titles, phone numbers or addresses. Let the exact business name and factual product description carry the format.",
+        "examples": [
+          {
+            "text": "Una pantalla para registrar y consultar gastos personales en COP.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Front: pocket and name on Quiet Paper. Reverse: one short description in Deep Ink; no fake QR code or contact placeholder.",
+            "title": "Two-sided composition"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-46",
+        "title": "Quick-start card",
+        "layout": "applications",
+        "summary": "Design study: replace a gift card with a compact task guide. Avoid balances, redemption codes or implied payments; organize the instructions as three short steps.",
+        "examples": [
+          {
+            "text": "Completa los cuatro campos, selecciona Guardar gasto y espera la confirmación.",
+            "title": "Registra tu primer gasto"
+          },
+          {
+            "text": "Para el importe, escribe 18500,50 o 18500.50, sin separadores de miles.",
+            "title": "Input reminder"
+          },
+          {
+            "text": "Use a 600-weight heading, numbered steps in 400 and one green action label. Leave ample space between steps.",
+            "title": "Card hierarchy"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-47",
+        "title": "Document seal",
+        "layout": "applications",
+        "summary": "Design study: use the pocket as a small identifier on reference-document closures, not a certification stamp. Preserve the master geometry and avoid language implying verified or secure financial data.",
+        "examples": [
+          {
+            "text": "Guía de referencia.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Place the green symbol on a Quiet Paper label with a quarter-symbol clear zone. Do not add checkmarks, stars or circular certification text.",
+            "title": "Seal layout"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-48",
+        "title": "Customer support",
+        "layout": "applications",
+        "summary": "Design study: keep help inside the editor or workspace and name the next safe action. Distinguish unavailable sessions, failed refreshes, uncertain sends and conflicts without inventing a support channel.",
+        "examples": [
+          {
+            "text": "Recuperar envío original. El gasto pudo haberse guardado; conserva este envío antes de iniciar otro.",
+            "title": "No pudimos confirmar el resultado"
+          },
+          {
+            "text": "El navegador puede estar bloqueando la sesión. Reintenta o abre la aplicación directamente.",
+            "title": "No pudimos iniciar la sesión"
+          },
+          {
+            "text": "Compare Tu borrador, Último confirmado and Versión actual in the editor. Keep values visible and require an explicit choice before replacing them.",
+            "title": "Conflicting versions"
+          }
+        ]
+      },
+      {
+        "id": "brand-page-49",
+        "title": "Thank you",
+        "layout": "cover",
+        "summary": "This guide presents an original identity proposed for this project, with examples of its visual and editorial use.",
+        "examples": [
+          {
+            "text": "Una pantalla. Gastos claros.",
+            "title": "Bolsillo Gastos"
+          },
+          {
+            "text": "Identity and product scope: supplied Bolsillo Gastos plan. Typography: supplied IBM Plex Sans files, weights 400, 500, 600 and 700.",
+            "title": "Source list"
+          },
+          {
+            "text": "Keep the same pocket, palette, Spanish action labels and distinction between draft, uncertain and confirmed states across all future materials.",
+            "title": "Continuity rule"
+          }
+        ]
+      }
+    ],
+    "voice": "Español directo, breve y concreto. Acciones nombradas, importes inequívocos y mensajes que distinguen borrador, envío incierto y guardado. Sin promesas comerciales ni vocabulario técnico innecesario.",
+    "colors": [
+      {
+        "hex": "#F7F8F2",
+        "name": "Quiet Paper",
+        "role": "background"
+      },
+      {
+        "hex": "#FFFFFF",
+        "name": "Clear Canvas",
+        "role": "surface"
+      },
+      {
+        "hex": "#246348",
+        "name": "Steady Green",
+        "role": "accent"
+      },
+      {
+        "hex": "#202A25",
+        "name": "Deep Ink",
+        "role": "text"
+      },
+      {
+        "hex": "#536058",
+        "name": "Soft Sage",
+        "role": "muted"
+      }
+    ],
+    "origin": "proposed",
+    "markSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M30 30H40V94L80 122L120 94V70H130V100L80 136L30 100Z\" fill=\"#246348\"/><path d=\"M94 24L130 60H94Z\" fill=\"#246348\"/></svg>",
+    "sources": [
+      "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    ],
+    "version": 1,
+    "fontFaces": [
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-97ZUB4/brand/fonts/6dbe082463cf749cfa057d45c3048c90f4df031496498e5b5bdfd0b6babb9d16.ttf",
+        "family": "IBM Plex Sans",
+        "sha256": "6dbe082463cf749cfa057d45c3048c90f4df031496498e5b5bdfd0b6babb9d16",
+        "weight": "400",
+        "originalUrl": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llzAA.ttf"
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-97ZUB4/brand/fonts/6f7a8c4219e021ff7c9131bc5f1f7af97bcd1436a59578d444a8cb92e9791742.ttf",
+        "family": "IBM Plex Sans",
+        "sha256": "6f7a8c4219e021ff7c9131bc5f1f7af97bcd1436a59578d444a8cb92e9791742",
+        "weight": "500",
+        "originalUrl": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD2FlzAA.ttf"
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-97ZUB4/brand/fonts/5311c66fd6d04ae45671236f7eae667b671c06c1dc7e88d52c206e5fadd0fb21.ttf",
+        "family": "IBM Plex Sans",
+        "sha256": "5311c66fd6d04ae45671236f7eae667b671c06c1dc7e88d52c206e5fadd0fb21",
+        "weight": "600",
+        "originalUrl": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDNF5zAA.ttf"
+      },
+      {
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-97ZUB4/brand/fonts/e129a20e8ff7c907ffd07124b573e88c323b7b18afc934d4aa539a3e0f2fe100.ttf",
+        "family": "IBM Plex Sans",
+        "sha256": "e129a20e8ff7c907ffd07124b573e88c323b7b18afc934d4aa539a3e0f2fe100",
+        "weight": "700",
+        "originalUrl": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSDDV5zAA.ttf"
+      }
+    ],
+    "positioning": "Herramienta personal de una pantalla para registrar y consultar gastos en COP con rapidez, persistencia real y estados de guardado comprensibles.",
+    "researchStatus": "not_requested",
+    "tokenSemanticsVersion": 1
+  },
+  "textColor": "#202A25",
+  "accentColor": "#246348",
+  "fontHeading": "IBM Plex Sans",
+  "borderRadius": "0.25rem",
+  "logoImageUrl": null,
+  "primaryColor": "#246348",
+  "secondaryColor": "#FFFFFF",
+  "backgroundColor": "#F7F8F2"
+}

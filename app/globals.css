@@ -1,33 +1,307 @@
 @import "tailwindcss";
-
-@theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.97 0 0);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.97 0 0);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.97 0 0);
-  --color-accent-foreground: oklch(0.205 0 0);
-  --color-destructive: oklch(0.577 0.245 27.325);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
-  --radius: 0.5rem;
+@theme inline {
+  --font-sans: var(--brand-font-body);
+  --color-background: var(--brand-background);
+  --color-foreground: var(--brand-text);
+  --color-primary: var(--brand-primary);
+  --color-primary-foreground: #ffffff;
+  --color-accent: #edf2ec;
+  --color-accent-foreground: var(--brand-text);
+  --color-input: #778078;
+  --color-ring: var(--brand-primary);
+  --color-destructive: var(--brand-error);
+  --color-destructive-foreground: #ffffff;
+  --color-border: #dce0d9;
+}
+@layer base {
+  :root { --brand-error: #B42332; }
+  * { @apply box-border; }
+  body { @apply m-0 bg-background text-foreground text-base antialiased; font-family: var(--brand-font-body); }
+  h1,h2,h3,h4 { font-family: var(--brand-font-heading); @apply font-semibold; }
+  button,a,input,textarea,select,summary { @apply outline-offset-4; }
+  :focus-visible { outline: 2px solid var(--brand-primary); }
+  button { @apply cursor-pointer min-h-11; }
+  button:disabled { @apply cursor-not-allowed; }
+  input, textarea, select { @apply w-full min-w-0 rounded-sm border border-input bg-white px-3 text-base h-11 text-foreground; }
+  input[aria-invalid="true"], textarea[aria-invalid="true"], select[aria-invalid="true"] { @apply border-destructive; }
+  textarea { @apply min-h-11 resize-none overflow-hidden py-[9px] leading-6; }
+  input::placeholder,textarea::placeholder { @apply text-[#59645c]; }
+  input:disabled,textarea:disabled,select:disabled { @apply bg-[#f5f6f2]; }
+}
+@layer components {
+  .masthead { @apply border-b border-border bg-white; }
+  .header-inner { @apply mx-auto flex max-w-[1244px] items-center justify-between px-8 py-3; }
+  .brand { @apply flex min-h-11 items-center gap-3 text-[26px] font-semibold tracking-[-0.6px] no-underline; }
+  .brand img { @apply shrink-0; }
+  .session-status { @apply flex items-center gap-2 text-sm text-[#536058]; }
+  .workspace { @apply mx-auto max-w-[1244px] px-8 pt-6 pb-6; --editor-track:360px; }
+  .summary { @apply relative grid items-center rounded-t-sm border border-primary border-b-0 bg-white py-5 gap-y-3; grid-template-columns: minmax(0,1fr) var(--editor-track); }
+  .summary-figures { @apply min-w-0 mx-5; }
+  .summary-mark { @apply absolute top-5 right-5; }
+  .summary .label, .filter label { @apply block text-sm text-[#536058] mb-1.5; }
+  .total { @apply min-w-0 max-w-full; }
+  .total>div { @apply flex flex-wrap items-baseline gap-x-2; }
+  .total strong { @apply text-[36px] leading-tight font-semibold tracking-[-1px] text-primary whitespace-nowrap; font-variant-numeric: tabular-nums; }
+  .currency { @apply text-sm text-[#536058]; }
+  .count { @apply mt-1 inline-flex min-h-11 max-w-full flex-wrap items-center gap-x-1 text-sm text-[#536058]; font-variant-numeric: tabular-nums; }
+  .count-action { @apply ml-2 text-primary underline underline-offset-4; }
+  .summary.unknown strong { color: var(--brand-text); }
+  .filter { @apply min-w-0 ml-[21px] mr-5 pt-9; }
+  .summary-context { @apply mx-5 text-sm text-[#875900] border-t border-border pt-2; grid-column:1/-1; }
+  .filter-recovery { @apply flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-3 text-sm text-[#536058]; grid-column:1/-1; }
+  .filter-recovery button { @apply whitespace-normal; }
+  .work-surface { @apply grid items-stretch border border-primary rounded-b-md overflow-visible; grid-template-columns:minmax(0,1fr) var(--editor-track); }
+  .register { @apply min-w-0 bg-white rounded-bl-md; }
+  .register-heading { @apply px-5 py-2 min-h-16 flex justify-between items-center gap-3; }
+  .register-heading>div { @apply flex items-center gap-3; }
+  .register-heading h2 { @apply text-lg; scroll-margin-top:16px; }
+  .register-heading span { @apply text-xs text-[#536058]; }
+  .register-heading button { @apply shrink-0 text-primary; }
+  .register table { @apply w-full border-collapse text-base; table-layout: fixed; }
+  .register th { @apply border-y border-border bg-[#fafbf8] px-3 py-3 text-left text-xs font-medium text-[#536058]; }
+  .register td { @apply border-b border-border px-2 py-4 align-middle; }
+  .register th:first-child,.register td:first-child { @apply pl-5; }
+  .register th:last-child,.register td:last-child { @apply pr-5; }
+  .register th:nth-child(2) { width: 124px; }
+  .register th:nth-child(3) { width: 116px; }
+  .register th:nth-child(4) { width: 208px; }
+  .register th:nth-child(5) { width: 162px; }
+  td[data-label="Fecha"] { @apply whitespace-nowrap text-[#536058]; }
+  .register th.numeric { @apply text-right; }
+  .numeric { @apply text-right; font-variant-numeric: tabular-nums; }
+  .amount { @apply font-medium whitespace-nowrap; }
+  .concept-text { @apply font-medium break-words; overflow-wrap: anywhere; }
+  .example { @apply inline-block rounded-sm bg-[#edf0e9] px-1.5 py-0.5 text-xs text-[#536058] align-middle font-normal whitespace-nowrap; }
+  .row-actions { @apply flex flex-nowrap gap-2; }
+  .row-actions button { @apply min-w-11 min-h-11 px-2 rounded-sm shrink-0 text-primary; }
+  .row-actions button:hover { @apply underline underline-offset-4; }
+  tr.selected { position:relative; @apply bg-[#edf3ee]; box-shadow: inset 3px 0 var(--brand-primary); }
+  .row-marker { @apply absolute left-0 top-0 w-[3px] h-full bg-primary pointer-events-none; transform-origin:top; animation:register-line 160ms ease-out both; }
+  .register-bottom { @apply px-5 py-4; }
+  .register-bottom p { @apply flex items-start gap-2 text-xs text-[#536058] leading-relaxed; }
+  .register-bottom p svg { @apply shrink-0; }
+  .editor { @apply relative min-w-0 border-l border-[#b6c7b9] bg-white p-5 rounded-br-md; container-type: inline-size; }
+  .editor form { @apply flex flex-col gap-4 mt-4; }
+  .selection-marker { @apply absolute block left-[-1px] top-0 bottom-0 w-[3px] bg-primary pointer-events-none; transform-origin: top; animation: register-line 160ms ease-out both; }
+  .editor-top { @apply grid grid-cols-[minmax(0,1fr)_auto] gap-x-3 gap-y-3 items-center; }
+  .editor h2 { @apply text-xl leading-tight break-words tracking-[-0.4px]; overflow-wrap: anywhere; }
+  .editor.editing h2 { @apply col-span-2 text-[23px]; }
+  .editor-mode { @apply col-span-2 text-sm text-[#536058] -mb-2; }
+  .editor h2:focus { outline: none; }
+  .editor .example { @apply justify-self-start col-span-2 mb-0; }
+  .save { @apply rounded-sm self-start; }
+  .fields { @apply grid gap-4; }
+  .field { @apply min-w-0; }
+  .field label { @apply block text-sm font-medium mb-1.5; }
+  .field-help { @apply flex justify-between gap-2 text-xs text-[#536058] mt-1.5 leading-snug; }
+  .field-help>span:last-child { @apply whitespace-nowrap; }
+  .field-help.counter-only { @apply justify-end; }
+  .amount-limit { @apply text-xs text-[#536058]; }
+  .amount-limit summary { @apply flex w-fit min-h-11 cursor-pointer items-center gap-2 text-primary; }
+  .amount-limit p { @apply pb-2 leading-relaxed; }
+  .amount-limit[open] summary svg,.notes details[open] summary svg { transform:rotate(180deg); }
+  .field-error { @apply text-sm text-destructive mt-2 leading-snug; }
+  .cancel-edit { @apply rounded-sm self-start justify-self-start px-2 text-sm; grid-column:1; grid-row:1; }
+  .editor.editing .save { grid-column:2; grid-row:1; }
+  .editor-top.confirmed { @apply grid-cols-1 gap-2; }
+  .editor-top.confirmed h2,.editor-top.confirmed .example { @apply col-span-1; }
+  .saved-status { @apply flex items-start gap-2 text-sm font-medium text-primary; }
+  .saved-status svg { @apply shrink-0 mt-0.5; }
+  .another { @apply mt-2 w-full; }
+  .draft-header { @apply mt-5 border-t border-border pt-4; }
+  .filter-notice { @apply text-sm mt-3 text-[#875900]; }
+  .feedback:not(:empty) { @apply mt-3; }
+  .feedback p { @apply flex items-start gap-2 text-xs leading-relaxed; }
+  .feedback svg { @apply shrink-0 mt-0.5; }
+  .success { @apply rounded-sm border border-[#a0b8a5] bg-[#edf3ee] p-3 text-primary; }
+  .pending { @apply text-[#536058]; }
+  .warning { @apply text-[#875900]; }
+  .unsaved { @apply border-l-2 border-[#875900] pl-3 text-[#875900]; }
+  .unsaved strong { @apply block text-base mb-1; }
+  .unsaved > p:not(.original-confirmation) { @apply text-sm; }
+  .unsaved .original-confirmation { @apply text-[#536058] mt-2; }
+  .validation { @apply rounded-sm border border-destructive bg-[#fff6f5] p-3 text-sm text-destructive; }
+  .validation ul { @apply mt-2; }
+  .validation a { @apply underline underline-offset-2 flex items-center min-h-11 py-1; }
+  .recovery { @apply mt-4 border-t border-[#b9a980] pt-4 text-sm; }
+  .recovery.uncertain { @apply mt-0 border-t-0 pt-0; }
+  .recovery-title { @apply flex items-start gap-2; }
+  .recovery-title svg { @apply shrink-0 text-[#875900] mt-0.5; }
+  .recovery h3 { @apply text-base text-[#875900]; }
+  .recovery p { @apply mt-2 leading-relaxed; }
+  .recovery button { @apply whitespace-normal h-auto py-2; }
+  .attempt { @apply my-4; }
+  .attempt p { @apply mb-3 break-words; }
+  .text-button { @apply text-primary underline underline-offset-4 text-sm text-left font-medium; }
+  .field-comparison { @apply grid grid-cols-2 gap-3 border-t border-border mt-3 pt-2; }
+  .field-comparison dt { @apply text-xs text-[#536058] mb-1; }
+  .field-comparison dd { @apply text-base leading-snug; overflow-wrap:anywhere; }
+  .comparison-shared { @apply col-span-2 flex flex-wrap items-baseline gap-x-2; }
+  .comparison-shared dt { @apply mb-0; }
+  .comparison-shared dd { @apply text-sm; }
+  .field-comparison .comparison-status { @apply col-span-2 text-xs text-[#536058]; }
+  .comparison-status dt { @apply sr-only; }
+  .field-comparison .comparison-status dd { @apply text-xs; }
+  .field-comparison .comparison-status.changed { @apply text-[#875900] font-medium; }
+  .draft-label { @apply text-primary; }
+  .submitted-snapshot { @apply grid gap-1 p-3 bg-[#fff9eb]; }
+  .submitted-snapshot span { overflow-wrap:anywhere; }
+  .recovery h3 { scroll-margin-top:16px; }
+  .conflict-actions { @apply flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-[#b9a980] pt-4; }
+  .conflict-actions button { @apply whitespace-normal h-auto py-2; }
+  .load-error { @apply flex items-start gap-3 border-x border-t border-primary bg-[#fffbef] px-6 py-4 text-sm; }
+  .load-error>svg { @apply shrink-0 text-[#875900]; }
+  .load-error p { @apply mt-1 mb-3; }
+  .empty { @apply text-center py-12 px-6 text-[#536058]; }
+  .empty>svg,.empty>img { @apply mx-auto mb-4; }
+  .empty h3 { @apply text-base text-foreground; }
+  .empty p { @apply mt-2 text-sm mb-4; }
+  .empty-ledger { @apply px-5 pt-6 pb-6 text-[#536058]; }
+  .empty-ledger h3 { @apply text-base text-foreground; }
+  .empty-ledger-actions { @apply mt-2 flex flex-col items-start gap-3; }
+  .empty-ledger p { @apply text-sm; }
+  .empty-ledger button { @apply shrink-0; }
+  .notes { @apply flex justify-end py-5 text-xs text-[#536058]; }
+  .notes details { @apply max-w-[420px]; }
+  .notes summary { @apply flex cursor-pointer gap-4 items-center text-sm text-primary min-h-11; }
+  .notes details p { @apply pt-3 leading-relaxed; }
+  .dialog-overlay { @apply fixed inset-0 z-40 bg-[#202a25]/40; }
+  .dialog-content { @apply fixed left-1/2 top-1/2 z-50 w-[calc(100%-32px)] max-w-[460px] -translate-x-1/2 -translate-y-1/2 rounded-sm border border-border bg-white p-6 shadow-xl max-h-[calc(100dvh-32px)] overflow-auto; }
+  .dialog-title { @apply text-xl font-semibold; }
+  .dialog-description { @apply mt-3 text-base leading-relaxed text-[#536058] break-words; overflow-wrap: anywhere; }
+  .dialog-actions { @apply mt-6 flex flex-wrap justify-end gap-3; }
+  .dialog-actions button { @apply whitespace-normal h-auto; }
+}
+@keyframes register-line { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .selection-marker,.row-marker { animation:none; }
+  *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; }
+}
+/* Summary and workspace share tracks; long titles and recovery get more editing room. */
+@media (min-width:1051px) {
+  .expanded-editor { --editor-track:minmax(0,1fr); }
+  .empty-workspace { --editor-track:minmax(0,2fr); }
+  .wide-editor .fields { @apply grid-cols-2 gap-x-5; }
+  .wide-editor .field-concept,.wide-editor .field-amount { @apply col-span-2; }
+  .empty-ledger { @apply mx-5 max-w-[360px] border-t border-border px-0 pt-4; }
+  .empty-workspace .filter { max-width:360px; }
+}
+/* A row's layout follows its available register width, including recovery mode. */
+@media (max-width:1200px) {
+  .register table,.register tbody { @apply block; }
+  .register thead { @apply sr-only; }
+  .register tr { @apply grid grid-cols-2 gap-x-4 gap-y-2 px-5 py-4 border-t border-border; }
+  .register td,.register td:first-child,.register td:last-child { @apply block border-0 p-0 min-w-0 text-base; }
+  .register td::before { content:attr(data-label); @apply block text-xs text-[#536058] font-normal mb-0.5; }
+  .register td.concept-cell { @apply col-span-2; }
+  .register td.concept-cell::before,.register td[data-label="Acciones"]::before { content:none; }
+  .register td.amount { @apply text-right self-center; }
+  .register td[data-label="Acciones"] { @apply self-center; }
+  .row-actions { @apply justify-end; }
+}
+@media (min-width:1051px) {
+  .wide-editor .register table,.wide-editor .register tbody { @apply block; }
+  .wide-editor .register thead { @apply sr-only; }
+  .wide-editor .register tr { @apply grid grid-cols-[minmax(0,1fr)_auto_auto] gap-x-4 gap-y-1 px-5 py-3 border-t border-border; }
+  .wide-editor .register td,.wide-editor .register td:first-child,.wide-editor .register td:last-child { @apply block border-0 p-0 min-w-0; }
+  .wide-editor .register td::before { content:none; }
+  .wide-editor .register td.concept-cell { grid-column:1/3; grid-row:1; }
+  .wide-editor .register td.amount { grid-column:3; grid-row:1; @apply text-right self-start; }
+  .wide-editor .register td[data-label="Categoría"] { grid-column:1; grid-row:2; @apply text-[#536058] self-center; }
+  .wide-editor .register td[data-label="Fecha"] { grid-column:2; grid-row:2; @apply self-center; }
+  .wide-editor .register td[data-label="Acciones"] { grid-column:3; grid-row:2; }
+  .wide-editor .row-actions { @apply justify-end; }
+}
+@media (max-width:1050px) {
+  .work-surface { @apply flex flex-col; }
+  .editor { @apply order-first w-full p-6 border-l-0 border-b border-[#b6c7b9] rounded-none; }
+  .register { @apply w-full rounded-b-md; }
+  .fields { @apply grid-cols-2 gap-x-6 gap-y-4; }
+  .field-concept,.field-amount { @apply col-span-2; }
+  .summary { @apply px-5 gap-x-8; grid-template-columns:minmax(0,1fr) 300px; }
+  .summary-figures,.summary-context { @apply mx-0; }
+  .filter { @apply m-0 pt-0 pr-12; }
+  .large-total { grid-template-columns:minmax(0,1fr); }
+  .large-total .filter { padding-right:0; }
+  .large-total .total .label { @apply min-h-9 mb-0 pr-12; }
+}
+@media (min-width:601px) and (max-width:1050px) {
+  .validation ul { @apply flex flex-wrap gap-x-6; }
+  .register tr { grid-template-columns:1fr 1fr 1.3fr auto; gap:8px 16px; padding:16px 24px; }
+  .register td.concept-cell { grid-column:1/-1; }
+  .register td { @apply self-center; }
+  .empty-ledger { @apply px-6; }
+  .editor-top.confirmed { grid-template-columns:minmax(0,1fr) auto; }
+  .confirmed .saved-status,.editor-top.confirmed h2 { grid-column:1/-1; }
+}
+@media (max-width:600px) {
+  .summary { grid-template-columns:minmax(0,1fr); }
+  .summary .total .label { @apply min-h-9 mb-0 pr-12; }
+  .summary .filter { padding-right:0; }
+}
+@media (max-width:600px) {
+  .header-inner { @apply px-4 py-0 min-h-12; }
+  .brand { @apply text-[23px] gap-2; }
+  .brand img { @apply w-7 h-7; }
+  .session-status { @apply text-[0px] gap-0; }
+  .session-status svg { @apply w-[18px] h-[18px]; }
+  .workspace { @apply px-4 pt-4; }
+  .summary { @apply px-4 py-2.5 gap-y-3; }
+  .summary-mark { @apply top-2.5 right-4; }
+  .summary .label,.filter label { @apply text-xs mb-0; }
+  .total { @apply pr-0; }
+  .total strong { @apply text-[32px] leading-none; }
+  .filter { @apply pl-0; grid-column:1/-1; }
+  .filter label { @apply mb-1; }
+  .filter select { @apply h-11; }
+  .large-total .total strong { @apply tracking-[-1.5px]; font-size:clamp(20px,7vw,30px); white-space:normal; overflow-wrap:anywhere; }
+  .editor { @apply p-4; }
+  .editor h2,.editor.editing h2 { @apply text-xl; }
+  .editor-top .save { @apply px-3 text-sm; }
+  .editor form { @apply mt-4 gap-4; }
+  .fields { @apply grid-cols-1 gap-4; }
+  .field-concept,.field-amount { @apply col-span-1; }
+  .register-heading { @apply px-4 py-2 min-h-[60px]; }
+  .register-heading span { @apply text-xs; }
+  .register-heading button { @apply px-3; }
+  .empty-ledger { @apply px-4; }
+  .register.is-empty .register-heading { @apply min-h-14; }
+  .register.is-empty .empty-ledger { @apply pt-1; }
+  .register tr { @apply px-4 py-3; grid-template-columns:minmax(150px,1fr) auto; }
+  .register td::before { content:none; }
+  .register td.concept-cell { grid-column:1; grid-row:1; }
+  .register td.amount { grid-column:2; grid-row:1; @apply text-right self-start; }
+  .register td[data-label="Categoría"] { grid-column:1; grid-row:2; @apply text-[#536058]; }
+  .register td[data-label="Fecha"] { grid-column:2; grid-row:2; @apply text-right; }
+  .register td[data-label="Acciones"] { grid-column:1/-1; grid-row:3; }
+  .register tr.long-amount td.concept-cell { grid-column:1/-1; }
+  .register tr.long-amount td.amount { grid-column:1/-1; grid-row:2; @apply text-right; }
+  .register tr.long-amount td[data-label="Categoría"],.register tr.long-amount td[data-label="Fecha"] { grid-row:3; }
+  .register tr.long-amount td[data-label="Acciones"] { grid-row:4; }
+  .row-actions { @apply justify-start; }
+  .row-actions button { @apply px-3; }
+  .register-bottom { @apply border-t border-border px-4 py-4; }
+  .load-error { @apply px-4; }
+  .notes details { @apply max-w-none w-full; }
+  .notes summary { @apply justify-between; }
+}
+@media (max-width:360px) {
+  .editor.editing .editor-top:not(.confirmed) { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .editor.editing .editor-top .save,.editor.editing .editor-top .cancel-edit { @apply w-full min-w-0 h-auto whitespace-normal px-2 leading-tight; }
 }
 
-@layer base {
-  * {
-    border-color: var(--color-border);
-  }
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-  }
+/* Validation shares the authoritative destructive color; summaries index fields. */
+.validation,.field-error {color:#B42332;}
+.validation,input[aria-invalid="true"],textarea[aria-invalid="true"],select[aria-invalid="true"] {border-color:#B42332;}
+.validation ul {display:flex;flex-wrap:wrap;gap:0 16px;}
+.filter-controls {display:flex;align-items:center;gap:12px;}
+.filter-controls select {flex:1;min-width:0;}
+.filter-reset {flex-shrink:0;min-height:44px;}
+.currency-note {display:none;}
+.deletion-target {display:grid;gap:4px;margin-bottom:12px;color:var(--brand-text);}
+@media(max-width:639px){
+ .register-heading>div {flex-direction:column;align-items:flex-start;gap:2px;}
+ .currency-note {display:block;font-size:13px;line-height:18px;}
+ .validation ul {display:block;}
+ .validation a {display:block;padding:12px 0;}
 }
